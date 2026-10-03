@@ -22,9 +22,8 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\DTO\" />
     <Folder Include="Models\DATA\" />
-    <Folder Include="Models\DOMAIN\" />
+    <Folder Include="Models\DTO\" />
     <Folder Include="Service\" />
     <Folder Include="Respiratory\" />
   </ItemGroup>
