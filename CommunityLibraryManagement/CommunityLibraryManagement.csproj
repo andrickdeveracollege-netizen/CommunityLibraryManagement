@@ -23,7 +23,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\DATA\" />
-    <Folder Include="Models\DTO\" />
     <Folder Include="Service\" />
     <Folder Include="Respiratory\" />
   </ItemGroup>
