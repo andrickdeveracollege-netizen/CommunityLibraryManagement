@@ -1,7 +1,7 @@
-﻿using CommunityLibraryManagement.Respiratory;
+﻿using System.Linq;
+using CommunityLibraryManagement.Respiratory;
 using WebApplication1.Mapper;
 using WebApplication1.Models.DTO;
-using Microsoft.EntityFrameworkCore;
 
 namespace CommunityLibraryManagement.Service
 {
@@ -17,7 +17,6 @@ namespace CommunityLibraryManagement.Service
         public async Task<IEnumerable<BookDto>> GetAllAsync()
         {
             var books = await _repository.GetAllAsync();
-
             return books.Select(BookMapper.ToDto);
         }
 
@@ -36,7 +35,6 @@ namespace CommunityLibraryManagement.Service
         public async Task<BookDto> CreateAsync(AddBookDto dto)
         {
             var book = BookMapper.ToEntity(dto);
-
             var result = await _repository.AddAsync(book);
 
             return BookMapper.ToDto(result);

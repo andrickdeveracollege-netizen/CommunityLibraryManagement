@@ -1,6 +1,8 @@
-﻿using WebApplication1.Models.DTO;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using WebApplication1.Models.DTO;
 
-namespace CommunityLibraryManagement.Service
+namespace CommunityLibraryManagement.Services
 {
     public interface IBookService
     {

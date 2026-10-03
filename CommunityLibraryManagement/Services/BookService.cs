@@ -1,8 +1,9 @@
-using CommunityLibraryManagement.Service;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models.DTO;
+using CommunityLibraryManagement.Service;
 
-namespace CommunityLibraryManagement.Controllers
+
+namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -35,7 +36,7 @@ namespace CommunityLibraryManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<BookDto>> Create([FromBody] AddBookDto dto)
+        public async Task<ActionResult<BookDto>> Create(AddBookDto dto)
         {
             var book = await _service.CreateAsync(dto);
 
@@ -46,7 +47,9 @@ namespace CommunityLibraryManagement.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<BookDto>> Update(int id, [FromBody] AddBookDto dto)
+        public async Task<ActionResult<BookDto>> Update(
+            int id,
+            AddBookDto dto)
         {
             var book = await _service.UpdateAsync(id, dto);
 
