@@ -6,6 +6,7 @@ The Community Library Management System is a RESTful Web API built with ASP.NET 
 
 
 **_Database Setup_**
+
 Open SQL Server Management Studio and run _/database/database-design.sql_ first to create the database and tables. After that, run _/database/database-content.sql_ to insert the sample data.
 
 Configure the connection string in _appsettings.json_ to match your SQL Server setup. The connection string should point to the _CommunityLibraryDb_ database.
