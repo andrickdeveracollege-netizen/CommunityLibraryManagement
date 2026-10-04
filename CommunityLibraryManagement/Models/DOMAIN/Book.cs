@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Models.Domain
+﻿using CommunityLibraryManagement.Models.DOMAIN;
+
+namespace CommunityLibraryManagement.Models.DOMAIN
 {
     public class Book
     {
@@ -9,6 +11,8 @@
         public string Category { get; set; } = string.Empty;
         public int TotalCopies { get; set; }
         public int AvailableCopies { get; set; }
+
+        public ICollection<Loan> Loans { get; set; } = new List<Loan>();
 
     }
 }
