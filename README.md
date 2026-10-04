@@ -67,7 +67,16 @@ The project uses a layered architecture consisting of Controllers, Services, and
 -Created Book.cs
 -Created BooksController.cs
 -Created BookMapper.cs
+-Created BookDto.cs
+-Created BookService.cs
+-Created AddBookDto.cs
 -Created BookRepository.cs
 -Created IBookRepository.cs
+-Created ILoanRepository.cs
+-Created IMemberRepository.cs
+-Created IBookService.cs
+-Created IMemberService.cs
+-Created ILoanService.cs
 -Created DATABASE_SCRIPT
 -Created AppDBContext.cs
+-Created the Database in SQL
