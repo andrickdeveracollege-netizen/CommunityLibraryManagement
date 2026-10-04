@@ -2,6 +2,7 @@
 {
     public class CreateMemberDto
     {
+        public int Id { get; set; }
         public string FullName { get; set; } = default!;
         public string Email { get; set; } = default!;
         public string MembershipType { get; set; } = default!;
