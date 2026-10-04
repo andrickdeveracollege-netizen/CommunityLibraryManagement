@@ -1,4 +1,4 @@
-﻿namespace CommunityLibraryManagement.Models.DOMAIN.DTO
+﻿namespace CommunityLibraryManagement.Models.DTO
 {
     public class AddLoanDto
     {

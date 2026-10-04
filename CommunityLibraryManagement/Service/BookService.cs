@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using CommunityLibraryManagement.Models.DOMAIN.DTO;
+using CommunityLibraryManagement.Models.DTO;
 using CommunityLibraryManagement.Respiratory;
 using WebApplication1.Mapper;
 

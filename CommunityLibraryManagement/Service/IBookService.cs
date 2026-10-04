@@ -1,4 +1,4 @@
-﻿using CommunityLibraryManagement.Models.DOMAIN.DTO;
+﻿using CommunityLibraryManagement.Models.DTO;
 
 namespace CommunityLibraryManagement.Service
 {

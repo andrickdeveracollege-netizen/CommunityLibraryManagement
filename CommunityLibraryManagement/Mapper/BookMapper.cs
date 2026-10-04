@@ -1,4 +1,4 @@
-﻿using CommunityLibraryManagement.Models.DOMAIN.DTO;
+﻿using CommunityLibraryManagement.Models.DTO;
 using WebApplication1.Models.Domain;
 
 namespace WebApplication1.Mapper
