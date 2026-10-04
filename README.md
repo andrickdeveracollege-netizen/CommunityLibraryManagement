@@ -17,15 +17,34 @@ _dotnet run_
 **_Endpoints_**
 
 _Books:_
--GET /api/Books
--GET /api/Books/{id}
--POST /api/Books
--PUT /api/Books/{id}
+-GET /api/Books,
+-GET /api/Books/{id},
+-POST /api/Books,
+-PUT /api/Books/{id},
 -DELETE /api/Books/{id}
 
 _Members:_
--GET /api/Members
--GET /api/Members/{id}
--POST /api/Members
--PUT /api/Members/{id}
+-GET /api/Members,
+-GET /api/Members/{id},
+-POST /api/Members,
+-PUT /api/Members/{id},
 -DELETE /api/Members/{id}
+
+_Loans:_
+-GET /api/Loans,
+-GET /api/Loans/{id},
+-POST /api/Loans,
+-PUT /api/Loans/{id},
+-DELETE /api/Loans/{id},
+-POST /api/Loans/{id}/return
+
+
+**_Layer Structure_**
+The project uses a layered architecture consisting of Controllers, Services, and Repositories. Controllers handle API requests and responses, Services handle the application's business logic, and Repositories handle database operations through Entity Framework Core. The application uses Scoped dependency injection lifetimes for the Services and Repositories, creating one instance of each for every HTTP request.
+
+
+**_TEAM CONTRIBUTIONS_**
+**CHICO:**
+
+
+**ANDRICK:**
