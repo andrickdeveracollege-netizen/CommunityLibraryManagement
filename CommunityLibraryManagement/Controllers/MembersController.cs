@@ -77,17 +77,6 @@ namespace CommunityLibraryManagement.Controllers
             return NoContent();
         }
 
-        [HttpGet("{id}/loans")]
-        public async Task<ActionResult<IEnumerable<LoanDto>>> GetLoans(int id)
-        {
-            var member = await _service.GetByIdAsync(id);
-
-            if (member == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(await _loanService.GetByMemberIdAsync(id));
-        }
+        
     }
 }
