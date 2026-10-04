@@ -44,7 +44,30 @@ The project uses a layered architecture consisting of Controllers, Services, and
 
 
 **_TEAM CONTRIBUTIONS_**
-**CHICO:**
 
+**CHICO:**
+-Created Member.cs
+-Created Loan.cs
+-Created MemberDto.cs
+-Created AddMemberDto.cs
+-Created LoanDto.cs
+-Created AddLoanDto.cs
+-Created MemberMapper.cs
+-Created LoanMapper.cs
+-Created MemberRepository.cs
+-Created LoanRepository.cs
+-Created MemberService.cs
+-Created LoanService.cs
+-Created MembersController.cs
+-Created LoansController.cs
+-Created the ReadMe for the repository
 
 **ANDRICK:**
+-Created the Repository and starting folders
+-Created Book.cs
+-Created BooksController.cs
+-Created BookMapper.cs
+-Created BookRepository.cs
+-Created IBookRepository.cs
+-Created DATABASE_SCRIPT
+-Created AppDBContext.cs
