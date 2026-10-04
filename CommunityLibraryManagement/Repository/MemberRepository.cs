@@ -1,12 +1,13 @@
 ﻿using CommunityLibraryManagement.Models.DOMAIN;
 using CommunityLibraryManagement.Models.DATA;
+using Microsoft.EntityFrameworkCore;
 namespace CommunityLibraryManagement.Repository
 {
     public class MemberRepository : IMemberRepository
     {
         private readonly AppDBContext _context;
 
-        public MemberRepository(AppDbContext context)
+        public MemberRepository(AppDBContext context)
         {
             _context = context;
         }

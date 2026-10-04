@@ -1,9 +1,8 @@
 ﻿using CommunityLibraryManagement.Models.DTO;
-using CommunityLibraryManagement.Services;
-using CommunityLibraryManagement.Models.DOMAIN;
+using CommunityLibraryManagement.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.Controllers
+namespace CommunityLibraryManagement.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

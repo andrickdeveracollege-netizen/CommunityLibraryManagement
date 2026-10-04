@@ -1,7 +1,7 @@
 ﻿using CommunityLibraryManagement.Mapper;
 using CommunityLibraryManagement.Models.DTO;
 using CommunityLibraryManagement.Repository;
-using WebApplication1.Mapper;
+using CommunityLibraryManagement.Service;
 
 namespace CommunityLibraryManagement.Services
 {

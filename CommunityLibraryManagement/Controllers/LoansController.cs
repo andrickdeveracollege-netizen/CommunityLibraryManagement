@@ -1,7 +1,7 @@
 ﻿using CommunityLibraryManagement.Models.DTO;
 using CommunityLibraryManagement.Models.DOMAIN;
-using CommunityLibraryManagement.Services;
 using Microsoft.AspNetCore.Mvc;
+using CommunityLibraryManagement.Service;
 
 namespace CommunityLibraryManagement.Controllers
 {
