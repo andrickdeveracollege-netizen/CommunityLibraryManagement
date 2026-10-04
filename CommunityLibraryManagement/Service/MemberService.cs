@@ -1,7 +1,6 @@
 ﻿using CommunityLibraryManagement.Mapper;
 using CommunityLibraryManagement.Models.DTO;
 using CommunityLibraryManagement.Repository;
-using WebApplication1.Interfaces;
 using WebApplication1.Mapper;
 
 namespace CommunityLibraryManagement.Services
