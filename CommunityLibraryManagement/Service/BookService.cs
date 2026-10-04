@@ -1,7 +1,7 @@
 ﻿using System.Linq;
+using CommunityLibraryManagement.Models.DOMAIN.DTO;
 using CommunityLibraryManagement.Respiratory;
 using WebApplication1.Mapper;
-using WebApplication1.Models.DTO;
 
 namespace CommunityLibraryManagement.Service
 {
