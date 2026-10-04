@@ -1,5 +1,5 @@
-﻿using WebApplication1.Models.Domain;
-using WebApplication1.Models.DTO;
+﻿using CommunityLibraryManagement.Models.DTO;
+using WebApplication1.Models.Domain;
 
 namespace WebApplication1.Mapper
 {

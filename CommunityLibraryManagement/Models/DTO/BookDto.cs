@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Models.DTO
+﻿namespace CommunityLibraryManagement.Models.DTO
 {
     public class BookDto
     {
