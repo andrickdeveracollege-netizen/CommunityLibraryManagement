@@ -1,4 +1,7 @@
 ﻿namespace CommunityLibraryManagement.Repository
+﻿using CommunityLibraryManagement.Models.DOMAIN;
+
+namespace CommunityLibraryManagement.Repository
 {
     public interface IMemberRepository
     {

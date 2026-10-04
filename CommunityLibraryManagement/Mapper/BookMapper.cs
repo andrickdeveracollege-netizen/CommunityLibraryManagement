@@ -1,7 +1,7 @@
-﻿using WebApplication1.Models.Domain;
-using WebApplication1.Models.DTO;
+﻿using CommunityLibraryManagement.Models.DTO;
+using CommunityLibraryManagement.Models.Domain;
 
-namespace WebApplication1.Mapper
+namespace CommunityLibraryManagement.Mapper
 {
     public static class BookMapper
     {
