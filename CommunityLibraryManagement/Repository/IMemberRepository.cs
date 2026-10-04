@@ -1,14 +1,14 @@
-﻿namespace CommunityLibraryManagement.Repository
-﻿using CommunityLibraryManagement.Models.DOMAIN;
+﻿
+using CommunityLibraryManagement.Models.DOMAIN;
 
 namespace CommunityLibraryManagement.Repository
 {
     public interface IMemberRepository
     {
-        Task<IEnumerable<Member>> GetAllAsync();
-        Task<Member?> GetByIdAsync(int id);
-        Task<Member> AddAsync(Member member);
-        Task UpdateAsync(Member member);
-        Task DeleteAsync(Member member);
+        Task<IEnumerable<Members>> GetAllAsync();
+        Task<Members?> GetByIdAsync(int id);
+        Task<Members> AddAsync(Members member);
+        Task UpdateAsync(Members member);
+        Task DeleteAsync(Members member);
     }
 }

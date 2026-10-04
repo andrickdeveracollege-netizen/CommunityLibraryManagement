@@ -1,16 +1,14 @@
 ﻿using CommunityLibraryManagement.Models.DATA;
 using CommunityLibraryManagement.Models.DOMAIN;
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Models.Domain;
-using static CommunityLibraryManagement.Repository.LoanRepository;
 namespace CommunityLibraryManagement.Repository
 {
         public class LoanRepository : ILoanRepository
         {
-            private readonly AppDbContext _context;
+            private readonly AppDBContext _context;
 
-            public LoanRepository(AppDbContext context)
-            {
+            public LoanRepository(AppDBContext context)
+        {
                 _context = context;
             }
 

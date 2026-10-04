@@ -1,9 +1,8 @@
 ﻿using CommunityLibraryManagement.Models.DTO;
-using CommunityLibraryManagement.Services;
-using CommunityLibraryManagement.Models.DOMAIN;
+using CommunityLibraryManagement.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.Controllers
+namespace CommunityLibraryManagement.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -78,17 +77,6 @@ namespace WebApplication1.Controllers
             return NoContent();
         }
 
-        [HttpGet("{id}/loans")]
-        public async Task<ActionResult<IEnumerable<LoanDto>>> GetLoans(int id)
-        {
-            var member = await _service.GetByIdAsync(id);
-
-            if (member == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(await _loanService.GetByMemberIdAsync(id));
-        }
+        
     }
 }

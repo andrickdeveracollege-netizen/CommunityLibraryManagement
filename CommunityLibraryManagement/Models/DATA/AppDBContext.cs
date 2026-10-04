@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApplication1.Models.Domain;
+using CommunityLibraryManagement.Models.DOMAIN;
 
 namespace CommunityLibraryManagement.Models.DATA
 {
@@ -9,6 +9,8 @@ namespace CommunityLibraryManagement.Models.DATA
             : base(options) { }
 
         public DbSet<Book> Books => Set<Book>();
+        public DbSet<Members> Members => Set<Members>();
+        public DbSet<Loan> Loans => Set<Loan>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

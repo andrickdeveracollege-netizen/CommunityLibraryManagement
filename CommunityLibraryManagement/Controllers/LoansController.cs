@@ -1,6 +1,5 @@
 ﻿using CommunityLibraryManagement.Models.DTO;
-using CommunityLibraryManagement.Models.DOMAIN;
-using CommunityLibraryManagement.Services;
+using CommunityLibraryManagement.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommunityLibraryManagement.Controllers
@@ -65,6 +64,19 @@ namespace CommunityLibraryManagement.Controllers
             }
 
             return Ok(result.Loan);
+        }
+
+        [HttpGet("{id}/loans")]
+        public async Task<ActionResult<IEnumerable<LoanDto>>> GetLoans(int id)
+        {
+            var member = await _service.GetByIdAsync(id);
+
+            if (member == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(await _service.GetByMemberIdAsync(id));
         }
     }
 }

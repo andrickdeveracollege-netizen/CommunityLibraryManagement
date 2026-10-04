@@ -1,9 +1,16 @@
-﻿namespace CommunityLibraryManagement.Models.DTO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CommunityLibraryManagement.Models.DTO
 {
     public class AddMemberDto
     {
         public string FullName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Membership type is required.")]
+        [RegularExpression(
+        "^(Faculty|Student)$",
+        ErrorMessage = "Membership type must be Faculty or Student.")]
         public string MembershipType { get; set; } = string.Empty;
         public DateTime DateJoined { get; set; }
         public bool IsActive { get; set; }

@@ -1,6 +1,5 @@
 ﻿using CommunityLibraryManagement.Models.DATA;
-using WebApplication1.Models.Domain;
-using WebApplication1.Mapper;
+using CommunityLibraryManagement.Models.DOMAIN;
 using Microsoft.EntityFrameworkCore;
 
 

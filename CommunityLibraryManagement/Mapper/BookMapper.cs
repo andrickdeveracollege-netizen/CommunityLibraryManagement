@@ -1,5 +1,5 @@
 ﻿using CommunityLibraryManagement.Models.DTO;
-using CommunityLibraryManagement.Models.Domain;
+using CommunityLibraryManagement.Models.DOMAIN;
 
 namespace CommunityLibraryManagement.Mapper
 {
